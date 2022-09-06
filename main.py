@@ -1,4 +1,3 @@
-from tokenize import Number
 import discord
 from discord.ext import commands
 
@@ -19,7 +18,5 @@ async def delete(ctx: commands.context.Context, arg):
                 await message.delete()
     except:
         ctx.send('Invalid number argument.')
-
-    
 
 client.run(token, bot=False)
